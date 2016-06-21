@@ -17,39 +17,39 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.james.compass.views.RatioImageView
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:id="@+id/image"
-                android:background="#bdbdbd"
-                android:scaleType="centerCrop" />
+                android:id="@+id/imageLayout">
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="8dp">
+                <com.james.compass.views.RatioImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/image"
+                    android:background="#bdbdbd"
+                    android:scaleType="centerCrop" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:id="@+id/title"
-                    android:textSize="24sp"
-                    android:textColor="?android:textColorPrimaryInverse"
-                    android:layout_margin="8dp" />
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/image_gradient"
+                    android:gravity="center_vertical|end"
+                    android:id="@+id/imageAttrs"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/image_credit_prefix" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:id="@+id/subtitle"
-                    android:textSize="14sp"
-                    android:textColor="?android:textColorSecondaryInverse"
-                    android:layout_margin="8dp" />
+            </FrameLayout>
 
-            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/title"
+                android:textSize="24sp"
+                android:textColor="?android:textColorPrimaryInverse"
+                android:layout_margin="16dp" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -118,15 +118,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    android:text="About"
-                    android:textColor="?android:textColorPrimaryInverse" />
+                    android:text="@string/action_website"
+                    android:textColor="?android:textColorPrimaryInverse"
+                    android:id="@+id/website" />
 
                 <android.support.v7.widget.AppCompatButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    android:text="Save"
-                    android:textColor="@color/colorAccent" />
+                    android:text="@string/action_save"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/save" />
 
             </LinearLayout>
 

@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">Compass</string>
     <string name="title_activity_maps">Compass</string>
+
+    <string name="action_view">View</string>
+    <string name="action_website">Website</string>
+    <string name="action_save">Save</string>
+    <string name="action_unsave">Remove from Saved</string>
+
+    <string name="drawer_home">Home</string>
+    <string name="drawer_saved">Saved</string>
+    <string name="drawer_explore">Explore</string>
+    <string name="drawer_about">About Compass</string>
+
+    <string name="image_credit_prefix">Image by: </string>
+
+    <string name="fetching_resources">Fetching resources…</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
